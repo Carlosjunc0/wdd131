@@ -1,3 +1,13 @@
+/* Color Variables */
+
+:root {
+    --primary-color: #070001;
+    --secondary-color: #e9e0d1;
+    --accent1-color: #91a398;
+    --accent2-color: #33605a;
+    --accent3-color: #68462b;
+}
+
 /* Font Setup */
 body {
   font-family: 'Open Sans', sans-serif;
@@ -9,7 +19,7 @@ body {
 
 /* Header Styles */
 header {
-  background-color: #003366;
+  background-color: var(--accent2-color);
   color: white;
   padding: 1rem;
   text-align: center;
@@ -57,7 +67,7 @@ main {
 h1 {
   grid-column: 1 / -1;
   text-align: center;
-  color: #003366;
+  color: var(--primary-color);
 }
 
 /* Card Layout */
@@ -69,7 +79,7 @@ h1 {
 }
 
 .card h2 {
-  background-color: #0d4d79;
+  background-color: var(--accent2-color);
   color: white;
   padding: 0.5rem;
   border-radius: 5px;
@@ -78,7 +88,7 @@ h1 {
 
 .card .content {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 1rem;
   margin-top: 1rem;
 }
@@ -114,12 +124,3 @@ footer p {
   color: #FFD700;
 }
 
-
-
-/* :root {
-    --primary-color: #070001;
-    --secondary-color: #e9e0d1;
-    --accent1-color: #91a398;
-    --accent2-color: #33605a;
-    --accent3-color: #68462b;
-}*/

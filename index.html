@@ -1,43 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - Carlos Junco</title>
-    <meta description content="An index page of the WDD 131 - Dynamic Web Fundamentals Course - Carlos Junco">
-    <meta author="Carlos Junco">
-    <!-- <link rel="stylesheet" href="styles/base.css"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: "Montserrat", sans-serif;
-            font-weight: 500;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WDD 131 - Dynamic Web Fundamentals - Carlos Junco</title>
+  <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Carlos Junco personal site with project and profile information.">
+  <meta name="author" content="Carlos Junco">
+  <link rel="stylesheet" href="styles/base.css" />
+  <script src="scripts/getdates.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
-        <nav>
-            <a href="https://www.linkedin.com/in/carlos-junco-006b58337/">Linkedin Profile</a>
-            <a href="https://byupw.instructure.com/">Canvas</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng&id=p27#p27">Scripture</a>
-            <a href="finalproject.html">Final Project</a> <!-- This is a place holder for now -->
-        </nav>
-    </header>
-    <main>
-        <h1>Carlos Junco</h1>
-        <section class="card">
-            <img src="images/profile.jpg" alt="profile image" width="200" height="200">
-        </section>
-        <section class="card">
-            <img src="images/flag-of-mexico.JPEG" alt="flag of mexico image" width="200" height="133">
-            <p>Official Flag of Mexico</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 <span></span>🎆 Carlos Junco 🎆 Mexico </p>
-        <p>Last Modification: </p>
-    </footer>
+  <header>
+    <span id="course-title">WDD 131: Dynamic Web Fundamentals - <strong>Carlos Junco</strong></span>
+    <nav>
+      <a href="https://www.linkedin.com/in/carlos-junco-006b58337/" target="_blank">LinkedIn</a>
+      <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng&id=p27#p27" target="_blank">Scripture</a>
+      <a href="#">Final Project</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Carlos Junco</h1>
+    <section class="card">
+      <h2>About Me</h2>
+      <div class="content">
+        <p>
+          My name is Carlos. I was born in Oaxaca and live with my wife in Mexico.
+          I am currently working as a sales executive in a private company. I have been married for two years and it has been a very hard-working and learning experience. I feel happy to have a partner by my side every day.
+          I love listening to music and exercising. I also enjoy hiking and discovering new places.
+        </p>
+        <img src="images/profile.jpg" alt="Carlos's photo" class="profile-img">
+      </div>
+      <hr>
+      <h3>Oaxaca, Mexico</h3>
+      <div class="content">
+        <img src="images/flag-of-mexico.JPEG" alt="Flag of Mexico" class="flag-img">
+        <p>
+          <em>Official Flag of Mexico</em><br>
+          Mexico is a country full of life, with breathtaking landscapes, from idyllic beaches to magical towns. Its cuisine, such as tacos, mole, and tamales, is famous around the world. Mexican culture shines through its traditions, colors, music, and the warmth of its people. It is a place that can be experienced with all the senses.
+        </p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Web Dev Resources</h2>
+      <ul>
+        <li><a href="https://dev.to" target="_blank">Dev.to Community</a></li>
+        <li><a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
+        <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+        <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+        <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+        <li><a href="https://placeholder.com/" target="_blank">Image Placeholder</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> 🎆 Carlos Junco 🎆 Mexico</p>
+    <p id="lastModified"></p>
+  </footer>
 </body>
 </html>

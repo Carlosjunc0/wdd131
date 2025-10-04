@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Carlos Junco">
+    <meta description="Product Review Form Activity">
+
+    <title>Product Review Form</title>
+
+    <link rel="stylesheet" href="styles/form.css" />
+    
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html">
+            <!-- Product Name -->
+            <label for="productName">Product Name</label>
+            <select id="productName" name="productName" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+
+            <!-- Overall Rating -->
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <div class="rating">
+                    <label><input type="radio" name="rating" value="1" required> ★</label>
+                    <label><input type="radio" name="rating" value="2"> ★★</label>
+                    <label><input type="radio" name="rating" value="3"> ★★★</label>
+                    <label><input type="radio" name="rating" value="4"> ★★★★</label>
+                    <label><input type="radio" name="rating" value="5"> ★★★★★</label>
+                </div>
+            </fieldset>
+
+            <!-- Date of Installation -->
+            <label for="installationDate">Date of Installation</label>
+            <input type="date" id="installationDate" name="installationDate" required />
+
+            <!-- Useful Features -->
+            <fieldset>
+                <legend>Which features did you find useful in the product? <em>(Check all that apply)</em></legend>
+                <label><input type="checkbox" id="durability" name="features" value="Durability"> Durability</label>
+                <label><input type="checkbox" id="ease" name="features" value="Ease of Use"> Ease of Use</label>
+                <label><input type="checkbox" id="performance" name="features" value="Performance"> Performance</label>
+                <label><input type="checkbox" id="design" name="features" value="Design"> Design</label>
+            </fieldset>
+
+            <!-- Written Review -->
+            <label for="reviewText">Written Review <span>(Optional)</span></label>
+            <textarea id="reviewText" name="reviewText" rows="4"></textarea>
+
+            <!-- User Name -->
+            <label for="userName">Your Name <span>(Optional)</span></label>
+            <input type="text" id="userName" name="userName" />
+
+            <!-- Submit -->
+            <input type="submit" value="Post Review" class="submit-btn" />
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> 🎆 Carlos Junco 🎆 Mexico</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

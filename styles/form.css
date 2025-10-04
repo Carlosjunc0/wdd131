@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f4fa;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #04103c;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+form {
+  background-color: #d3cdd84f;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+label, legend {
+  display: block;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+input[type="text"],
+select,
+textarea,
+input[type="date"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  box-sizing: border-box;
+}
+
+fieldset {
+  border: none;
+  margin-top: 1rem;
+}
+
+.rating label {
+  display: inline-block;
+  margin-right: 0.3rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 1.5rem;
+  background-color: white;
+  border: 2px solid black;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #04103c;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}

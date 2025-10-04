@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Carlos Junco" />
+    <meta description="Review Confirmation Page" />
+
+    <title>Review Confirmation</title>
+
+    <link rel="stylesheet" href="styles/form.css" />
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            let count = localStorage.getItem("reviewCount") || 0;
+            count++;
+            localStorage.setItem("reviewCount", count);
+            document.getElementById("reviewCounter").textContent = count;
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Thank You for Your Review!</h1>
+    </header>
+
+    <main>
+        <p>Your review has been submitted successfully.</p>
+        <p>You have submitted <strong id="reviewCounter">0</strong> reviews so far.</p>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> 🎆 Carlos Junco 🎆 Mexico</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

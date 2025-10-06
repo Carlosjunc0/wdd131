@@ -1,80 +1,151 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Carlos Junco">
-    <meta description="Foody is your best choice for food delivery, received fast and fresh.">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foody | Website Plan</title>
+    <link rel="stylesheet" href="siteplan.css" />
+    <style>
+        /* === Basic styles for the site plan === */
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 2rem;
+            background-color: #f5f5f0;
+            /* Cream background */
+            color: #333;
+            line-height: 1.6;
+        }
 
-    <title>Foody</title>
+        header {
+            text-align: center;
+            background-color: #00a86b;
+            /* Foody Green */
+            color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
 
-    <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="styles/styles-small.css" media="screen and (max-width: 480px)" />
-    <link rel="stylesheet" href="styles/styles-large.css" media="screen and (min-width: 768px)" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        header h1 {
+            font-family: "Montserrat", sans-serif;
+            font-size: 2rem;
+        }
+
+        section {
+            background-color: white;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            border-radius: 10px;
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #00a86b;
+            border-bottom: 2px solid #00a86b;
+            padding-bottom: 5px;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        ul {
+            margin-left: 1.5rem;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            color: #777;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <img src="images/Foody-Logo.png" alt="Logo Foody Image" class="logo">
-
-        <h1 class="orange">Foody</h1>
-
-        <button class="hamburger" id="hamburger-btn">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
-
-        <nav id="nav-menu">
-            <ul>
-                <li><a href="siteplan.html">Home</a></li>
-                <li><a href="Order.html">Order</a></li>
-                <li><a href="review.html">Review</a></li>
-            </ul>
-        </nav>
-
+        <h1>Foody 🍽️</h1>
+        <p>Home-delivered meals in toppers and 100% natural beverages</p>
     </header>
 
-    <main>
-        <p> <strong>Tired or don't have time to cook?</strong> <strong><span class="orange"> Foody </span></strong>
-            helps you prepare your meals for the day or week. Your meals are made to order and stored in plastic
-            containers for easy storage in your refrigerator and easy heating in the microwave. You can also try our
-            100% natural, delicious, and refreshing drinks. </p>
+    <section id="site-name">
+        <h2>Site Name</h2>
+        <p><strong>Foody</strong> is a food delivery company that offers homemade-style meals served in reusable
+            toppers, accompanied by refreshing 100% natural drinks.</p>
+        <p><strong>Suggested domain:</strong> <a href="#">www.foody.com.mx</a></p>
+    </section>
 
-        <h2>Our Menu</h2>
+    <section id="purpose">
+        <h2>Purpose of the Site</h2>
+        <p>The purpose of <strong>Foody</strong> is to provide a healthy, practical, and sustainable meal experience
+            delivered straight to the customer’s door. The website will allow users to:</p>
+        <ul>
+            <li>Browse the available meals and beverages.</li>
+            <li>Place online orders for home delivery.</li>
+            <li>View promotions and weekly meal plans.</li>
+            <li>Learn about the brand’s eco-friendly philosophy.</li>
+            <li>Contact customer service.</li>
+        </ul>
+    </section>
 
-        <div class="container">
-            <div class="image-card">
-                <img src="images/Meal-1.jpg" alt="Meal 1 Image">
-                <p>Milanesa Napolitana</p>
-            </div>
-            <div class="image-card">
-                <img src="images/Drinks.jpg" alt="Drinks Image">
-                <p>Fresh Drinks</p>
-            </div>
-            <div class="image-card">
-                <img src="images/Meal-2.jpg" alt="Meal 2 Image">
-                <p>Tasajo a la Mexicana</p>
-            </div>
-        </div>
-    </main>
+    <section id="scenarios">
+        <h2>Scenarios</h2>
+        <p>Examples of questions a visitor might have:</p>
+        <ul>
+            <li>Can I order online and pay upon delivery?</li>
+            <li>What types of natural beverages do you offer, and which are the most popular?</li>
+        </ul>
+    </section>
+
+    <section id="colors">
+        <h2>Color Scheme</h2>
+        <p>The main colors reflect freshness, nature, and cleanliness:</p>
+        <ul>
+            <li><strong>Foody Green (#00A86B):</strong> used for headings, buttons, and main accents.</li>
+            <li><strong>Light Cream (#F5F5F0):</strong> used as the general background color for a natural and soft
+                feel.</li>
+            <li><strong>White (#FFFFFF):</strong> used for section backgrounds and content areas.</li>
+            <li><strong>Dark Gray (#333333):</strong> used for body text.</li>
+        </ul>
+    </section>
+
+    <section id="typography">
+        <h2>Typography</h2>
+        <ul>
+            <li><strong>Montserrat:</strong> used for headings to give a modern and professional look.</li>
+            <li><strong>Poppins:</strong> used for body text for better readability and friendliness.</li>
+        </ul>
+    </section>
+
+    <section id="wireframe">
+        <h2>Wireframe Diagram</h2>
+        <p>The following sketches represent the basic homepage layout for both mobile and desktop views:</p>
+        <h3>Mobile View 📱</h3>
+        <img src="wireframe-mobile.png" alt="Mobile wireframe layout" />
+        <h3>Desktop View 💻</h3>
+        <img src="wireframe-desktop.png" alt="Desktop wireframe layout" />
+        <p><em>Note:</em> These wireframes are basic visual representations and may be adjusted during development.</p>
+    </section>
+
+    <section id="testing">
+        <h2>Testing and Validation</h2>
+        <p>The document will be tested and reviewed using the following tools:</p>
+        <ul>
+            <li>W3C HTML Validator to check for valid code.</li>
+            <li>Chrome DevTools Lighthouse to evaluate accessibility, SEO, and performance.</li>
+            <li>Contrast Checker to ensure proper color contrast between text and background.</li>
+        </ul>
+    </section>
 
     <footer>
-        <strong><p>&copy;</strong> <span id="year"></span> 🎆 Carlos Junco 🎆 Mexico</p>
-        <p>Last Modification: <span id="lastModified"></span></p>
-        <div class="social-icons">
-            <a href="https://www.facebook.com/share/19fTGBhthf/?mibextid=wwXIfr" target="_blank" aria-label="Facebook">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://www.instagram.com/foody_oax?igsh=MnVyNDk2bnhteW1i&utm_source=qr" target="_blank" aria-label="Instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
-        </div>
+        <p>© 2025 Foody. Website Planning Document — Project W05.</p>
     </footer>
-
-    <script src="scripts/scripts.js" defer></script>
 </body>
 
 </html>

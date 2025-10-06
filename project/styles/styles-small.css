@@ -1,0 +1,69 @@
+@media (max-width: 768px) {
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: white;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    .container {
+        display: block;
+        text-align: center;
+    }
+
+    .image-card {
+        width: 200px;
+        margin-bottom: 20px;
+        transition: none;
+    }
+
+    .image-card img {
+        width: 100%;
+    }
+
+    .image-card:hover img {
+        transform: none;
+        z-index: auto;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
